@@ -1,0 +1,519 @@
+@font-face{
+    font-family:Street Power;
+    src:url(../assets/fonts/StreetPower-nRXjO.otf);
+}
+@font-face{
+    font-family:Vonique;
+    src:url(../assets/fonts/Vonique92-rnWB);
+}
+@font-face{
+    font-family:Avengers;
+    src:url(../assets/fonts/Avengers);
+}
+@font-face{
+    font-family:Kollektif;
+    src:url(../assets/fonts/Kollektif.ttf);
+}
+@font-face{
+    font-family:Eveleth;
+    src:url(../assets/fonts/Eveleth.ttf);
+}
+@font-face{
+    font-family:Bebas Neue;
+    src:url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face{
+    font-family:NetF-M;
+    src:url(../assets/fonts/NetflixSans-Medium.otf);
+}
+@font-face{
+    font-family:NetF-R;
+    src:url(../assets/fonts/NetflixSans-Regular.otf);
+}
+@font-face{
+    font-family:NetF-L;
+    src:url(../assets/fonts/NetflixSans-Light.otf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: black !important;
+    margin: 0 !important;
+}
+.navbar{
+    background-color: black;
+}
+button.navbar-toggler i{
+    color: white;
+    font-size: 25px;
+    background-color: deepskyblue;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+li a{
+    color: white;
+    font-family: NetF-L;
+    text-transform: uppercase;
+    transition:0.3s ease-in-out;
+    position: relative;
+}
+li a:hover{
+    color: deepskyblue;
+    transform: scale(1.1);
+    font-weight: bold;
+    transition:0.3s ease-in-out;
+}
+li a::after{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 3px;
+    bottom: -5px;
+    left:50%;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+    background-color: white;
+}
+li a:hover::after{
+    width: 50%;
+}
+a.active{
+    color: deepskyblue;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.header{
+    background-color: black; 
+}
+span.echo{
+    color: dodgerblue;
+    font-family: NetF-M;
+}
+span.hello{
+    font-family: NetF-R;
+    text-transform: uppercase;
+    color: whitesmoke;
+    pointer-events: none; 
+}
+p.welcome-text{
+    font-family: NetF-L;
+    color: white;
+    pointer-events: none; 
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.header h1{
+    font-family: NetF-M;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 60px;
+    pointer-events: none; 
+}
+.header h1 span{
+    color:deepskyblue;
+    text-shadow: 5px 5px 2px white;
+}
+.personal-logo{
+    transition:0.5s ease-in-out;
+}
+.personal-logo:hover{
+    filter: sepia(100%);
+    transform: rotate(360deg);
+    transition:0.3s ease-in-out;
+}
+.contact-button{
+    padding: 8px 35px;
+    background-color: transparent;
+    color: white;
+    font-family: NetF-L;
+    border-radius: 7px;
+    border: 1px solid deepskyblue;
+    transition:0.3s ease-in-out;
+}
+.contact-button:hover{
+    background-color: deepskyblue;
+    padding: 8px 50px;
+    text-decoration: none;
+    color: white;
+    transition:0.5s ease-in-out;
+}
+.introductory-text:hover hr.divider{
+    width: 50%;
+    transition:0.5s ease-in-out;
+}
+hr.divider{
+    border: 2px solid white;
+    width: 10%;
+    float: left;
+    position: absolute;
+    transition:0.3s ease-in-out;
+}
+.st,.fe,.ui{
+    color:deepskyblue;
+    font-weight: bolder;
+}
+.interests{
+    background: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 10px black;
+    border: 1px solid rgba(0,0,0,0.25);
+    width: 95%;
+    margin-top: -3%;
+    border-radius: 7px;
+    color: black;
+}
+.interests i{
+    padding: 20px;
+    font-weight: 900;
+    font-size: 40px;
+    color:deepskyblue;
+}
+.interests h6{
+    font-family: NetF-M;
+    color:deepskyblue;
+    text-transform: uppercase;
+}
+.interests p{
+    font-family: NetF-L;
+}
+.interests-container{
+    background-color: white;
+    padding: 10px;
+}
+.about{
+    background-color:#1f2024;
+    padding: 40px;
+    pointer-events: none;
+}
+.about h4{
+    font-family: NetF-L;
+    text-transform: uppercase;
+    line-height: 1;
+    color: white;
+}
+.about h1{
+    font-family: NetF-M;
+    text-transform: uppercase;
+    line-height: 1;
+    background-image: linear-gradient(to right,deepskyblue,white,skyblue,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about hr.colored{
+    float: left;
+    width: 20%;
+    border: 2px solid deepskyblue;
+}
+.about p{
+    font-family: NetF-L;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: white;
+    text-indent: 15px;
+    text-align: justify;
+}
+.about span{
+    font-weight: bold;
+    font-family: NetF-M;
+}
+.age, .frontend, .responsive{
+    font-size: 17px;
+    color:deepskyblue;
+    text-shadow: 1px 1px 10px deepskyblue;
+}
+.skills{
+    background-image: url('../assets/images/backgrounds/skills-bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 30px;
+    min-height: 100vh;
+}
+.skills hr.colored{
+    border: 2px solid deepskyblue;
+    width: 5%
+}
+.skills h1{
+    font-family: NetF-M;
+    text-transform: uppercase;
+    line-height: 1;
+    
+}
+.skills p{
+    font-family: NetF-R;
+    width: 80%;
+}
+.prog-cont{
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow:1px 2px 5px black ;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 20px;
+    width: 100%;
+}
+.prog-cont h4.frameworks{
+    text-transform: uppercase;
+    font-family: NetF-M;
+    background-image: linear-gradient(to right,black,red,orange,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.prog-cont h4.front-end-head{
+    text-transform: uppercase;
+    font-family: NetF-M;
+    background-image: linear-gradient(to right,#e44d26,gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.prog-cont h4.back-end-head{
+    text-transform: uppercase;
+    font-family: NetF-M;
+    background-image: linear-gradient(to right,black,dodgerblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.prog-cont hr{
+    width: 50%;
+}
+.bubble img{
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    transition:0.3s ease-in-out;
+}
+.bubble img:hover{
+    background-color: black;
+    border: 2px solid transparent;
+    transform:scale(1.05);
+    transition:0.4s ease-in-out;
+}
+.bubble-title h5{
+    color: black;
+    line-height: 1;
+}
+.projects{
+    background-color: white;
+    padding: 50px;
+    min-height: 100vh;
+}
+.recent-works h1{
+    font-family: NetF-M;
+    text-transform: uppercase;
+    font-family: NetF-M;
+    text-transform: uppercase;
+    line-height: 1;
+    background-image: linear-gradient(to right,black,deepskyblue,skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.recent-works p{
+    font-family: NetF-L;
+}
+.proj-container{
+    background-color: white;
+    padding: 0px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 7px;
+}
+.buttons .getcode_btn, .buttons .view_btn{
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-family: NetF-R;
+}
+.buttons .getcode_btn{
+    background-color: transparent;
+    transition:0.3s ease-in-out;
+}
+.buttons .getcode_btn:hover{
+    background-color: black;
+    color: white;
+    transition:0.4s ease-in-out;
+    border-radius: 20px;
+}
+.buttons .view_btn{
+    background-color: deepskyblue;
+    border: 1px solid transparent;
+    color: white;
+    transition:0.3s ease-in-out;
+}
+.buttons .view_btn:hover{
+    background-color: black;
+    color: white;
+    transition:0.4s ease-in-out;
+    border-radius: 20px;
+}
+.proj-definition ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.proj-definition h2{
+    font-family: NetF-M; 
+    color:darkslategray;
+}
+.proj-definition p{
+    font-family: NetF-R;
+    text-align: justify;
+    letter-spacing: 1px;
+    text-indent: 10px;
+}
+.proj-definition ul li{
+    background-color: rebeccapurple;
+    font-family: NetF-R;
+    border-radius: 7px;
+    padding:3px 11px;
+    margin: 1%;
+    float: left;
+}
+.proj-definition ul li.laravel-bubble{
+    background-color:rgba(255,69,0,0.3);
+    border: 1px solid orangered;
+    color:orangered;
+}
+.proj-definition ul li.html-bubble{
+    background-color:rgba(228,77,38,0.3);
+    border: 1px solid #e44d26;
+    color:#e44d26;
+}
+.proj-definition ul li.css-bubble{
+    background-color:rgba(30,144,255,0.3);
+    border: 1px solid dodgerblue;
+    color:dodgerblue;
+}
+.proj-definition ul li.bootstrap-bubble{
+    background-color:rgba(148,43,226,0.3);
+    border: 1px solid blueviolet;
+    color:blueviolet;
+}
+.proj-definition ul li.mysql-bubble{
+    background-color:rgba(0,0,255,0.3);
+    border: 1px solid blue;
+    color:blue;
+}
+.proj-definition ul li.php-bubble{
+    background-color:rgba(137, 147, 190,0.3);
+    border: 1px solid #232531;
+    color:#232531;
+}
+.proj-definition ul li.jquery-bubble{
+    background-color:rgba(65,105,225,0.3);
+    border: 1px solid royalblue;
+    color:royalblue;
+}
+.proj-definition ul li.javascript-bubble{
+    background-color:rgba(255,215,0,0.3);
+    border: 1px solid gold;
+    color:gold;
+}
+.contact{
+    background-color: #1d1f21;
+    padding:20px;
+    color: white;
+}
+.contact-me h1{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid deepskyblue; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    font-family: NetF-M;
+    text-transform: uppercase;
+}
+.contact-me h1 span{
+    background:#1d1f21; 
+    padding:0 10px; 
+}
+.contact-me p{
+    font-family: NetF-L;
+}
+button.email-me-btn{
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: NetF-R;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition:0.3s ease-in-out;
+}
+button.email-me-btn:hover{
+    padding: 10px 70px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    color: black;
+    border: 1px solid transparent;
+    transition:0.4s ease-in-out;
+    box-shadow: 1px 1px 10px deepskyblue;
+}
+.footer-name{
+    background-color: black;
+    color: white;
+    font-family: NetF-L;
+    letter-spacing: 2px;
+}
+.footer-made{
+    background-color: black;
+    color: white;
+}
+.footer-made a{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-made a:hover{
+    text-decoration: none;
+}
+.footer-image {
+    background-color: black;
+    border-top: 1px solid white;
+}
+.footer-image img{
+    transition:0.3s ease-in-out;
+}
+.footer-image img:hover{
+    cursor: pointer;
+    filter: sepia(100%);
+    transform: rotate(360deg);
+    transition:0.3s ease-in-out;
+}
+.footer-links {
+    background-color: black;
+}
+.footer-links i{
+    font-size: 20px;
+    color: white;
+    padding: 11px 15px;
+    border-radius: 50%;
+    margin: 1%;
+    border: 1px solid white;
+    transition:0.3s ease-in-out;
+}
+.footer-links i:hover{
+    text-decoration: none;
+    color:black;
+    border: 1px solid transparent;
+    background-color: deepskyblue;
+    transition:0.4s ease-in-out;
+}
+.contact-page{
+    background-image: url(../assets/images/backgrounds/contact-bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.contact-form{
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+}
+.contact-form h4{
+    font-family: NetF-M;
+    text-transform: uppercase;
+}
